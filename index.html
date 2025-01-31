@@ -1,37 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Legal-Solution</title>
+		<title>nature's platter</title>
 
 		<!-- Link-TailwindCss-Cdn & DaisyUI Start -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- Link-TailwindCss-Cdn & DaisyUI End -->
-
 		<!-- Link-Google-Font Start -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
 		<!-- Link-Google-Font End -->
-
-		<!-- Page-Customize-Menu-Start -->
-		<!-- Page-Customize-Menu-End -->
-
 		<!-- Page-Style-Start -->
-		<style></style>
+		<style>
+			/* Animation design start */
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+			}
+			.animate {
+				animation: fadeIn 1s infinite alternate;
+			}
+			/* Animation design End */
+			/* Other color and font start */
+			.dark1 {
+				color: rgb(17, 17, 17);
+			}
+			.dark2 {
+				color: rgb(29, 28, 28);
+			}
+			.white {
+				color: whitesmoke;
+			}
+			.green1 {
+				color: rgb(23, 152, 0);
+			}
+			.bac {
+				background-color: rgb(239, 235, 227);
+			}
+			.bac-gr {
+				background: linear-gradient(
+					180deg,
+					rgb(255, 255, 255),
+					rgb(239, 235, 227) 100%
+				);
+			}
+			.font-sora {
+				font-family: Sora;
+			}
+			/* Other color and font start */
+		</style>
 		<!-- Page-Style-End -->
-
 		<!-- CSS-Style & Font-Awesome-Link-Start -->
 		<link rel="stylesheet" href="styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		/>
 		<!-- CSS-Style & Font-Awesome-Link-End -->
 	</head>
-	<body>
+	<body class="font-sora">
 		<!-- -----------------------HEADER-SECTION------------------------------ -->
 		<!-- ------------------------------------------------------------------- -->
 		<!-- Header-Section-Start -->
 
 		<!-- Nav-Bar-Start -->
-		<h1>hello world</h1>
+		<div
+			class="navbar px-16 pt-5 mx-0 max-sm:px-5 max-sm:pt-1 max-sm:border-b max-sm:border-green-500"
+		>
+			<div class="navbar-start">
+				<a
+					><img
+						class="w-[140px] max-sm:hidden"
+						src="assets/logo-header.png"
+						alt="header logo"
+				/></a>
+				<a
+					><img
+						class="w-[80px] sm:hidden lg:hidden"
+						src="assets/mobile.png"
+						alt="header logo"
+				/></a>
+			</div>
+			<div class="navbar-center max-sm:hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<li><a>Product</a></li>
+					<li><a>Services</a></li>
+					<li><a>Contact us</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end space-x-5">
+				<a class="max-sm:hidden"
+					><i class="fa-solid fa-magnifying-glass"></i
+				></a>
+				<a class="max-sm:hidden"><i class="fa-solid fa-cart-shopping"></i></a>
+				<a class="btn px-7 border-green-500 hover:bg-green-600 max-sm:hidden"
+					>Login</a
+				>
+				<a
+					class="btn px-8 bg-green-600 hover:bg-green-800 max-sm:hidden text-stone-50"
+					>Register</a
+				>
+			</div>
+			<div class="dropdown">
+				<div
+					tabindex="0"
+					role="button"
+					class="sm:hidden lg:hidden text-green-500"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h8m-8 6h16"
+						/>
+					</svg>
+					<ul
+						tabindex="0"
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 absolute left-[-80px] right-auto shadow text-stone-800"
+					>
+						<li><a>Product</a></li>
+						<li><a>Services</a></li>
+						<li><a>Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<!-- Nav-Bar-End -->
-		 
 		<!-- Section-1-Start -->
+		<section id="Section-1" class="bac-gr mb-5">
+			<div>
+				<div
+					class="max-sm:w-[95%] max-sm:px-[5%] w-[50%] text-justify mx-auto pt-20"
+				>
+					<h1 class="max-sm:text-4xl text-6xl text-center">
+						Freshness <span class="animate green1">You Can Count</span> On,
+						Prices You’ll Love!
+					</h1>
+					<p class="text-center dark2 pt-10">
+						Shop your daily essentials at unbeatable prices. From fresh produce
+						to pantry staples, we’ve got you covered every day!
+					</p>
+				</div>
+				<div class="flex justify-center mx-auto pt-24">
+					<img src="assets/hero-vegetables.png" alt="" />
+				</div>
+			</div>
+		</section>
 		<!-- Section-1-End -->
 
 		<!-- Header-Section-End -->
